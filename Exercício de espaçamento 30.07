@@ -1,0 +1,18 @@
+#include <stdio.h>
+
+int main() {
+    int num, unid, dez, cent, unidM, dezM;
+    
+    printf("Informe um número de cinco dígitos: ");
+    scanf("%d", &num);
+    
+    unid = num / 10000;
+    dez = (num / 1000) % 10;
+    cent = (num / 100) % 10;
+    unidM = (num / 10) % 10;
+    dezM = num % 10;
+    
+    printf("%d %d %d %d %d", unid, dez, cent, unidM, dezM);
+
+    return 0;
+}
