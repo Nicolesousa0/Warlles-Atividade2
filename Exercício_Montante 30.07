@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    int idade;
+    long montante;
+    short number_conta;
+    
+    printf("Informe a idade: ");
+    scanf("%d", &idade);
+    printf("Informe o montante a depositar: ");
+    scanf("%ld", &montante);
+    printf("Informe o número da conta: ");
+    scanf("%hd", &number_conta);
+    
+    if (montante <= 5000){
+        printf ("Depósito realizado com sucesso!");
+    } else {
+        printf("Limite não disponível");
+    }
+    
+    return 0;
+}
